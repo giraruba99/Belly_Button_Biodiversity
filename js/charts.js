@@ -65,11 +65,13 @@ function buildCharts(sample) {
 
     // 4. Create a variable that filters the samples for the object with the desired sample number.
     var samplesArray = samples.filter(sampleObj => sampleObj.id == sample);
-    var results = samplesArray[0];
-    
-
-    //  5. Create a variable that holds the first sample in the array.
     var metaArray = data.metadata.filter(sampleObj => sampleObj.id == sample);
+    
+    
+  
+    //  5. Create a variable that holds the first sample in the array.
+    var results = samplesArray[0];
+
     var firstSample = samples[0];
     var firstMeta = metaArray[0]
 
@@ -79,6 +81,7 @@ function buildCharts(sample) {
     var otu_labels = results.otu_labels;
     var sample_values = results.sample_values;
 
+    var wfreq = firstMeta.wfreq;
     // 7. Create the yticks for the bar chart.
     // Hint: Get the the top 10 otu_ids and map them in descending order  
     //  so the otu_ids with the most bacteria are last. 
@@ -86,15 +89,14 @@ function buildCharts(sample) {
     var yticks = otu_ids.slice(0,10).map(otu_ids => `OTU ${otu_ids}`).reverse();
 
     // 8. Create the trace for the bar chart. 
-    var barData = [
-      {
+    var barData = [{
         x: sample_values.slice(0, 10).reverse(),
         y: yticks,
         text: otu_labels.slice(0, 10).reverse(),
         type: "bar",
         orientation: "h"
-      }
-    ];
+      }];
+      
     // 9. Create the layout for the bar chart. 
     var barLayout = {
       title: "Top 10 Bacteria Cultures Found",
@@ -114,8 +116,7 @@ function buildCharts(sample) {
     // DELIVERABLE 2
 
     // 1. Create the trace for the bubble chart.
-    var bubbleData = [
-      {
+    var bubbleData = [{
         x: otu_ids,
         y: sample_values,
         text: otu_labels,
@@ -125,8 +126,7 @@ function buildCharts(sample) {
           color: otu_ids,
           colorscale: "Earth"
         }
-      }
-    ];
+      }];
 
     // 2. Create the layout for the bubble chart.
     var bubbleLayout = {
