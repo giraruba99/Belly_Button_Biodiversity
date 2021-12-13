@@ -10,7 +10,21 @@ The main purpose of this analysis is to use html, css and JavaScript application
 
 * Our browser displays the drop-down menu to select from those thousands of samples and visualize the data accordingly.
 
+![Header](https://user-images.githubusercontent.com/89214854/145757683-e61e12a7-c988-44b0-981f-319733364593.png)
+
+
 * Our browser was able to display the intended visualizations... except for gauge.
+
+BAR CHART
+
+![Bar Chart](https://user-images.githubusercontent.com/89214854/145757743-c9bedc21-3430-46fa-87d5-3d163a7105ca.png)
+
+BUBBLE CHART
+
+![Bubble Chart](https://user-images.githubusercontent.com/89214854/145757774-3a75245d-228a-47a7-9861-3fefeeafd599.png)
+
+
+
 
 ## Issues
 * Still working on displaying the gauge displaying on browser
