@@ -8,6 +8,9 @@ The main purpose of this analysis is to use html, css and JavaScript application
 
 * A `script.js` scrip was written with a proper functions to create visualization of our `samples.json` data set.
 
+![Whole page](https://user-images.githubusercontent.com/89214854/145758175-ebe9b121-4337-4207-bcf7-d77fdff74403.png)
+
+
 * Our browser displays the drop-down menu to select from those thousands of samples and visualize the data accordingly.
 
 ![Header](https://user-images.githubusercontent.com/89214854/145757683-e61e12a7-c988-44b0-981f-319733364593.png)
