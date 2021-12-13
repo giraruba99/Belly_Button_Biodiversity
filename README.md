@@ -8,9 +8,26 @@ The main purpose of this analysis is to use html, css and JavaScript application
 
 * A `script.js` scrip was written with a proper functions to create visualization of our `samples.json` data set.
 
+![Whole page](https://user-images.githubusercontent.com/89214854/145758175-ebe9b121-4337-4207-bcf7-d77fdff74403.png)
+
+
 * Our browser displays the drop-down menu to select from those thousands of samples and visualize the data accordingly.
 
+![Header](https://user-images.githubusercontent.com/89214854/145757683-e61e12a7-c988-44b0-981f-319733364593.png)
+
+
 * Our browser was able to display the intended visualizations... except for gauge.
+
+BAR CHART
+
+![Bar Chart](https://user-images.githubusercontent.com/89214854/145757743-c9bedc21-3430-46fa-87d5-3d163a7105ca.png)
+
+BUBBLE CHART
+
+![Bubble Chart](https://user-images.githubusercontent.com/89214854/145757774-3a75245d-228a-47a7-9861-3fefeeafd599.png)
+
+
+
 
 ## Issues
 * Still working on displaying the gauge displaying on browser
